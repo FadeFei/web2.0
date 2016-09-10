@@ -2,7 +2,10 @@
 body {
 	background-image: url(img/intro_bg.jpg);
 	background-repeat: fixed;
+	/*set the body z-index 0*/
+	z-index: 0;
 }
+/*a bar on the top of the page */
 .topbar {
 	background-color: #fff;
 	width: 100%;
@@ -72,4 +75,20 @@ h2{
 	text-transform: uppercase;
 	text-align: left;
 	letter-spacing: 1px;
+}
+.vague a:hover img {
+	/*set the image blurry*/
+	filter: alpha(Opacity=50);
+	-moz-opacity:0.5;
+	opacity: 0.5;
+}
+.display li img {
+	display: none;
+}
+.display li:hover img {
+	position: absolute;
+	/*let the image float on top of the page*/
+	z-index: 99999;
+	float: right;
+	display: block;
 }
