@@ -15,14 +15,13 @@ body {
 	left: 0px;
 	top: 0px;
 }
-img {
+.vague img {
 	float: right;
 	width: 40%;
 	height: 40%
 }
 h1{
 	margin: 100px 0 200px 0 ;
-
 	font-weight: 900;
 	font-size: 100px;
 	text-transform: uppercase;
@@ -45,14 +44,14 @@ hr {
 	height: 10px;
 	background-color: silver;
 	opacity: 0.4;
-	margin: 50px 0 0 0;
+	margin: 50px 0 50px 0;
 }
 
 ul{
 	display: inline;
 }
 li {
-	list-style-image: url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");
+	list-style: none;
 	float: left;
 	margin: 0 60px;
 	padding: 0;
@@ -64,31 +63,24 @@ a {
 	color: #00AAEE;
 }
 
-a.general {
-	color: #b46b6b;
-	font-size: 40px;
-}
 
-h2{
-	color: #b46b6b;
-	font-size: 30px;
-	text-transform: uppercase;
-	text-align: left;
-	letter-spacing: 1px;
-}
-.vague a:hover img {
+a:hover img {
 	/*set the image blurry*/
 	filter: alpha(Opacity=50);
 	-moz-opacity:0.5;
 	opacity: 0.5;
 }
-.display li img {
+.pieList img {
+	width:200px;
+	height: 200px;
+}
+
+/*.display li img {
 	display: none;
 }
 .display li:hover img {
 	position: absolute;
-	/*let the image float on top of the page*/
 	z-index: 99999;
 	float: right;
 	display: block;
-}
+}*/
