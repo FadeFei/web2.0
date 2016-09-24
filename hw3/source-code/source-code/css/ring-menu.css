@@ -1,0 +1,243 @@
+body {
+	background: white;
+}
+li {
+	list-style: none;
+}
+#at-plus-container {
+	width: 300px;
+	top: 400px;
+	left: 38%;
+	position: relative;
+	/*border:solid;*/
+}
+
+
+/*apb和info-bar使用absolute定位是因为在尝试使用relative时布局出现严重问题
+* 在鼠标移到图标上时apb出现了预料外的瞬移，估计是因为relative互相影响的关系
+* 所以只能考虑用absolute，其他能用relative的都没有用absolute
+*/
+.apb {
+	background-color: rgba(123, 137, 206, 1);
+	position: absolute;
+    top: 45px;
+    left: 45%;
+	/*方形的前提下将radius设为一半即圆形*/
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background-size: 75%;
+	background-image: url("../assets/images/atplus_white.png");
+	background-repeat: no-repeat;
+	background-position: 7px 10px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+
+#info-bar {
+	width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: gray;
+    position: absolute;
+    top: 45px;
+    left: 45%;
+    opacity: 0;
+    transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	font-family: Impact, Verdana, sans-serif;
+}
+
+.user {
+	position: absolute;
+	top: 10px;
+	left: 44px;	
+}
+.user span {
+    position: relative;
+    left: 19%;
+    top: -10px;
+    color: white;
+}
+.comment {
+	position: absolute;
+	top: 41px;
+	left: 31px;
+}
+.comment span {
+	font-size: 35px;
+    position: relative;
+    left: 48%;
+    color: white;
+}
+.posted {
+	position: absolute;
+	top: 87px;
+	left: 20px;
+}
+.posted span {
+    position: relative;
+    top: -8px;
+    left: 7px;
+    color: green;
+}
+
+.like {
+	position: absolute;
+	top: 87px;
+	left: 71px;
+}
+.like span {
+    position: relative;
+    top: -10px;
+    left: 7px;
+    color: green;
+}
+
+
+
+.mask, .history, .message, .setting, .sign {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: gray;
+    background-size: 55%;
+    background-position: center;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.mask {
+	position: relative;
+    top: 50px;
+    left: 39%;
+}
+.history {
+	position: relative;
+    top: 20px;
+    left: 39%;
+}
+.message {
+	position: relative;
+    top: -10px;
+    left: 39%;
+}
+/*unread这里用relative的时候不知为何不能形成圆而是仅仅包住数字而已
+* 调节width和height均无效
+*/
+.message .unread {
+	width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    position: absolute;
+    top: -8px;
+    left: 55%;
+    color: white;
+    background-color: red;
+    font-size: 10pt;
+    text-align: center;
+    font-size: Arial, Helvetica, sans-serif;
+}
+.setting {
+	position: relative;
+    top: -40px;
+    left: 39%;
+}
+.sign {
+	position: relative;
+    top: -70px;
+    left: 39%;
+}
+/*这里在没有设置height为0的时候出现了奇怪的现象
+* 明明button没有设置width和height，但是在审查元素的时候却
+* 变成了300*150，而又因为hover触发条件包括了鼠标移动到button内
+* 如果不解决则会造成没有移动到@时就已经触发了效果
+* 猜测是因为五个小圆圈使用了relative定位
+* 在挨个尝试之后发现将control-ring的height设为0即可
+*/
+#control-ring {
+	height: 0;
+}
+
+
+/*hover部分在之前的布局问题解决的前提下没有遇到太多问题
+* 直接用浏览器调试位置即可
+*/
+
+#button:hover {
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+}
+#button:hover .apb {
+	background-color: rgba(48, 63, 159, 1);
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background-image: url(../assets/images/atplus_green.png);
+	background-repeat: no-repeat;
+	background-position: 8px 13px;
+	background-size: 70%;
+	opacity: 80%;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#button:hover #info-bar{
+	width: 130px;
+    height: 130px;
+    border-radius: 65px;
+    background-color: gray;
+    position: absolute;
+    top: -90px;
+    left: 32%;
+    opacity: 1;
+}
+#button:hover .mask {
+	background-image: url(../assets/images/mask.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 25px;
+	left: 19%;
+	opacity: 1;
+}
+
+#button:hover .history {
+	background-image: url(../assets/images/history.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 27px;
+	left: 13%;
+	opacity: 1;
+}
+
+#button:hover .message {
+	background-image: url(../assets/images/message.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 28px;
+	left: 19%;
+	opacity: 1;
+}
+
+#button:hover .setting {
+	background-image: url(../assets/images/setting.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 16px;
+	left: 32%;
+	opacity: 1;
+}
+
+#button:hover .sign {
+	background-image: url(../assets/images/signin.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -16px;
+	left: 47%;
+	opacity: 1;
+}
