@@ -1,0 +1,75 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	/*overflow: hidden;*/
+	background-image: url("../img/A.jpg");
+	background-size: 100%;
+}
+.name {
+	font-family: sans-serif;
+	text-align: center;
+
+}
+.calcu-edge {
+	margin-top: 50px;
+	border: 0px solid blue;
+	width: 480px;
+	height: auto;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 0 15px 5px gray;
+
+	background-color: #2e3a45;
+}
+.calcu-edge p {
+	margin: 0;
+	padding: 10px 0 0 0;
+	font-style: italic;
+	font-size: 20px;
+	font-family: "YaHei";
+	color: silver;
+}
+
+.formula-box {
+	height: 50px;
+	width: 90%;
+	text-align: right;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 20px;
+	font-size: 18px;
+	color: white;
+	border: 1px solid #2e3a45;
+	box-shadow: inset 0 0 2px 1px #2e3a45;
+	outline: none;
+	padding: 0 5px 0 0;
+
+	background-color: rgba(70,160,220,0.7);
+	overflow: hidden;
+}
+.key-box {
+	margin-top: 27px;
+}
+
+.key-box button {
+	outline: none;
+	height: 60px;
+	width: 100px;
+	border-radius: 30px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+
+	border: none;
+	/*border-bottom:1px solid #526474;*/
+	box-shadow:inset 0 0 0 1px #617586,inset 0 0 40px 5px rgba(0,0,0,.3),0 0 2px 1px rgba(0,0,0,.5);
+}
+.key-box button:hover {
+	background-color: skyblue;
+}
+.key-box button:active {
+	box-shadow:inset 0 -1px 0 #617586,inset 0 2px 8px rgba(0,0,0,.5), inset 0 0 40px 5px rgba(0,0,0,.25);
+}
