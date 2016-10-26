@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: "Century Gothic", sans-serif;
+}
+.mole-hole {
+	width: 400px;
+	height: 250px;
+	border: 1px solid;
+	border-left: none;
+	border-right: none;
+	margin: auto;
+	padding: 10px;
+}
+.hole {
+	width: 9%;
+	height: 37px;
+	border-radius: 20px;
+	/*background-image: url(../img/mole.jpg);*/
+	background-size: 100%;
+	border: 1px solid;
+	float: left;
+	margin: 1px;
+}
+
+#title {
+	/*border: 1px solid;*/
+	width: 1000px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#title h1, h2 {
+	margin: 20px;
+	font-weight: bold;
+}
+#menu {
+	/*border: 1px solid;*/
+	width:  600px;
+	height: 80px;
+	margin: auto;
+}
+.op {
+	width: 240px;
+	height: 80px;
+	margin-left: 20px;
+	/*border: 1px solid;*/
+}
+#start {
+	float: left;
+	margin-left: 40px;
+	margin-bottom: 10px;
+	background-color: white;
+	outline: none;
+	border-radius: 5px;
+}
+#station {
+	float: left;
+	width: 80px;
+	height: 20px;
+	border: 1px solid;
+	margin-left: 80px;
+	text-align: center;
+}
+.display {
+	width: 200px;
+	height: 80px;
+	/*border: 1px solid;*/
+	position: relative;
+	left: 440px;
+	top: -82px;
+}
+#Time {
+	float: left;
+}
+#TimeBox {
+	width: 20px;
+	height: 20px;
+	border: 1px solid;
+	float: right;
+}
+#Score {
+	float: left;
+	margin-top: 30px;
+	margin-left: -70px;
+}
+#ScoreBox {
+	width: 20px;
+	height: 20px;
+	border: 1px solid;
+	float: right;
+}
+.bottomText {
+	width: 800px;
+	height: 100px;
+	/*border: 1px solid;*/
+	margin: auto;
+}

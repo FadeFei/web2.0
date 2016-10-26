@@ -1,0 +1,64 @@
+body {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: "Century Gothic", sans-serif;
+	z-index: 1;
+	background-color: rgb(255, 255, 200);
+}
+h1 {
+	font-size: 20px;
+	color: black;
+}
+
+button {
+	border: none;
+	outline: none;
+	width: 80px;
+	height: 30px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(66, 134, 245);
+	font-weight: bold;
+	margin-top: 20px;
+}
+button:hover {
+	width: 85px;
+	height: 35px;
+}
+
+.jigsaw {
+	position: relative;
+	width: 350px;
+	height: 350px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.smallPuzzle {
+	position: absolute;
+	float: left;
+	width: 88px;
+	height: 88px;
+	background-image: url("../img/panda.jpg");
+	background-repeat:no-repeat;
+	border: 1px solid #EEEEEE;
+	transition: left 0.5s, top 0.5s, transform 0.2s;
+}
+
+.smallPuzzle:hover {
+	transform: scale(1.04);
+	-ms-transform: scale(1.04);
+	-webkit-transform: scale(1.04);
+	-o-transform: scale(1.04);
+	-moz-transform: scale(1.04);
+	transition: all 0.2s;
+}
+
+.blank {
+	position: absolute;
+	float: left;
+	width: 90px;
+	height: 90px;
+}

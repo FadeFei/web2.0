@@ -1,0 +1,145 @@
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: "Century Gothic", sans-serif;
+	background-color: white;
+	overflow: hidden;
+	text-align: center;
+}
+.result {
+	height: 20px;
+	width: 100%;
+}
+.problem {
+	color: white;
+}
+.bottomText {
+	width: 800px;
+	margin: auto;
+}
+.example {
+	width: 100px;
+	height: 20px;
+	float: right;
+	position: relative;
+	top: -10px;
+	left: -350px;
+	background-color: silver;
+	border: 1px solid;
+}
+#good {
+	position: relative;
+	left: -280px;
+}
+.maze {
+	width: 500px;
+	height: 300px;
+	/*border: 1px solid black;*/
+	position: relative;
+	margin: auto;
+}
+.wall1-1 {
+	width: 150px;
+	height: 50px;
+	float: left;
+	border: 1px solid;
+	border-right: none;
+	border-bottom: none;
+	background-color: white;
+}
+.wall1-2 {
+	width: 198px;
+	height: 49px;
+	float: left;
+	border: 1px solid;
+	border-left: none;
+	border-right: none;
+}
+.wall1-3 {
+	width: 150px;
+	height: 50px;
+	float: left;
+	border: 1px solid;
+	border-left: none;
+	border-bottom: none;
+}
+.wall2 {
+	width: 150px;
+	height: 151px;
+	float: left;
+	border: 1px solid;
+	border-top: none;
+}
+.wall3 {
+	width: 150px;
+	height: 151px;
+	float: right;
+	border: 1px solid;
+	border-top: none;
+}
+
+/*.start {
+	width: 45px;
+	height: 45px;
+	position: relative;
+	top: 203px;
+	border: 1px solid;
+	background-color: rgb(130, 255, 130);
+}*/
+.SE {
+	line-height: 43px;
+	font-weight: bold;
+	font-size: 30px;
+}
+.start {
+	width: 43px;
+	height: 43px;
+	border: solid 1px;
+	position: relative;
+	top: -98px;
+	background-color: rgb(130, 255, 130);
+	float: left;
+}
+.wall4 {
+	width: 100px;
+	height: 150px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 48px;
+	border: 1px solid;
+	border-bottom: none;
+}
+.end {
+	width: 43px;
+	height: 43px;
+	border: solid 1px;
+	position: relative;
+	top: -98px;
+	left: 410px;
+	float: left;
+	background-color: rgb(130, 130, 255)
+}
+
+.wall5-1 {
+	width: 202px;
+	height: 50px;
+	float: left;
+	border: 1px solid;
+	border-right: none;
+}
+.wall5-2 {
+	width: 100px;
+	height: 51px;
+	float: left;
+	border: none;
+	border-bottom: 1px solid;
+}
+.wall5-3 {
+	width: 196px;
+	height: 50px;
+	float: left;
+	border: 1px solid;
+	border-left: none;
+}
